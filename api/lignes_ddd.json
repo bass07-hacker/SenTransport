@@ -92,5 +92,34 @@
       "HLM",
       "Sandaga"
     ]
-  }
+  },
+
+  {
+    "id": 7,
+    "numero": "404",
+    "depart": "Yoff",
+    "arrivee": "Petersen",
+    "arrets": 5,
+    "listeArrets": [
+        "Yoff",
+        "Ouakam",
+        "Fann",
+        "Colobane",
+        "Petersen"
+    ]
+},
+{
+    "id": 8,
+    "numero": "505",
+    "depart": "Keur Massar",
+    "arrivee": "Plateau",
+    "arrets": 5,
+    "listeArrets": [
+        "Keur Massar",
+        "Parcelles",
+        "Grand Yoff",
+        "Colobane",
+        "Plateau"
+    ]
+}
 ]

@@ -48,19 +48,12 @@ def get_ligne(ligne_id):
     return jsonify(ligne)
 
 
-# Exercice 1 : Tous les arrêts sans doublons
+
+with open("arrets.json", "r") as f:
+    arrets = json.load(f)
 @app.route("/arrets")
 def get_arrets():
-
-    tous_les_arrets = []
-
-    for ligne in lignes:
-        tous_les_arrets.extend(ligne["listeArrets"])
-
-    arrets_uniques = sorted(list(set(tous_les_arrets)))
-
-    return jsonify(arrets_uniques)
-
+    return jsonify(arrets)
 
 # Exercice 2 : Statistiques
 @app.route("/stats")
